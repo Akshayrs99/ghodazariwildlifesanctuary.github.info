@@ -1,0 +1,417 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* GLOBAL ************************************/
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* BUTTON *************************************/
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 9999999;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: orangered;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#myBtn:hover {
+    background-color: darkslategrey;
+    /* Add a dark-grey background on hover */
+}
+
+
+/* HEADER ************************************/
+
+mark {
+    background-color: goldenrod;
+    color: black;
+    position: relative;
+}
+
+header {
+    z-index: 9999;
+    min-height: 80px;
+    border-bottom: orangered 3px solid;
+    display: flex;
+    align-items: center;
+    background: url(/image/Ghodazari.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: green;
+    color: skyblue;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: yellow;
+    font-size: 13px;
+}
+
+header a:hover {
+    color: orangered;
+}
+
+header #brand {
+    float: left;
+}
+
+header li {
+    float: left;
+    padding: 0 15px 0 15px;
+}
+
+header nav {
+    float: right;
+    padding-top: 35px;
+}
+
+header .highlight {
+    color: orangered;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.slidecontain {
+    position: relative;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.caption {
+    color: whitesmoke;
+    font-size: 30px;
+    position: absolute;
+    padding: 15px 0px;
+    background-color: rgba(27, 27, 27, 0.288);
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+}
+
+#next {
+    right: 9px;
+}
+
+#prev {
+    left: 9px;
+}
+
+.slide {
+    display: none;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video {
+    width: 90%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 90%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+    font-size: 2rem;
+    color: black;
+}
+
+.about .row .content p {
+    font-size: 1rem;
+    color: black;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
+/*  */
+
+section {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+
+/* HOME **************************************************/
+
+div#home {
+    font-size: 16px;
+    text-align: justify;
+    padding: 5px;
+}
+
+div#home figure {
+    float: right;
+    margin: 5px 0 0 10px;
+}
+
+
+/*-- HISTORY --------------------------------------------------------- */
+
+div#history {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 150px 10px 10px 10px;
+    margin-bottom: 5px;
+}
+
+div#history figure {
+    float: right;
+    margin: 5px 0 0 10px;
+}
+
+div#history p {
+    text-align: center;
+    background: #c1c1c1;
+    font-size: 60px;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+div#history img {
+    border: 2px solid black;
+}
+
+
+/*-- HOW TO COME --------------------------------------------------------- */
+
+div#come {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px 30px 10px;
+}
+
+div#come p {
+    text-align: center;
+    background: #c1c1c1;
+    font-size: 60px;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+div#come>div#googleMap {
+    width: 80%;
+    height: 430px;
+    margin: 0 auto;
+}
+
+
+/*-- GET AROUND --------------------------------------------------------- */
+
+div#getAround {
+    font-size: 16px;
+    padding: 0 10px 10px 10px;
+}
+
+div#getAround p {
+    text-align: center;
+    background: #c1c1c1;
+    font-size: 60px;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+}
+
+div#getAround ul {
+    list-style-type: none;
+    line-height: 1.8;
+}
+
+div#getAround li {
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+
+/*-- FOOTER --------------------------------------------------------- */
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    padding: 30px 0 30px 0;
+    background-color: orange;
+    color: white;
+}
+
+
+/************************************************** FOR TABLET SCREEN SIZE *************************************************/
+
+@media(max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    header #brand,
+    header nav,
+    header nav li {
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header #brand h1 {
+        font-size: 20px;
+    }
+    header .highlight {
+        font-size: 25px;
+    }
+    div#home {
+        font-size: 13px;
+        text-align: justify;
+        padding: 5px;
+    }
+    div#home figure {
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+    div#home img {
+        width: 100%;
+        height: 150px;
+    }
+    div#history {
+        text-align: justify;
+        font-size: 13px;
+        line-height: 1.5;
+        padding: 20px 10px 10px 10px;
+        margin-bottom: 5px;
+    }
+    div#history figure {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    div#history img {
+        width: 100%;
+        height: 350px;
+        float: none;
+        margin: 0 auto;
+    }
+    div#come,
+    div#getAround {
+        font-size: 13px;
+    }
+    div#getAround:not(li) {
+        text-align: center;
+    }
+    div#come p,
+    div#history p,
+    div#getAround p {
+        text-align: center;
+        background: #c1c1c1;
+        font-size: 30px;
+        font-family: sans-serif;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    div#come>div#googleMap {
+        width: 100%;
+        height: 300px;
+    }
+    footer {
+        font-size: 8px;
+    }
+    div#getAround ul {
+        text-align: left;
+    }
+    div#getAround li {
+        font-size: 13px;
+        padding: 0;
+        margin: 0
+    }
+}
